@@ -281,7 +281,7 @@ export default function Home() {
                 Benefizkonzert mit dem bayrischen Polizeiorchester
               </h3>
               <p className="text-gray-700 mb-4">
-                [Kurzer Text zum Benefizkonzert - bitte ergänzen]
+              Anlässlich seines 20-jährigen Bestehens hat der Verein „Wir gegen Jugendkriminalität e.V.“ in Zusammenarbeit mit dem Bayrischen Polizeiorchester ein Benefizkonzert veranstaltet.
               </p>
               <a
                 href="/pdfs/benefizkonzert_polizei.pdf"
@@ -294,7 +294,7 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
                 </svg>
               </a>
-            </div>
+        </div>
 
             {/* Selbstbehauptungskurs */}
             <div className="bg-white p-6 rounded-lg shadow-md">
@@ -302,12 +302,12 @@ export default function Home() {
                 Selbstbehauptungskurs mit Grundschülern gefördert
               </h3>
               <p className="text-gray-700 mb-4">
-                [Kurzer Text zum Selbstbehauptungskurs - bitte ergänzen]
+              Zweit- bis Viertklässler trainieren auf spielerische Art hilfreiche Abwehrtechniken in der <b>Grundschule Oberscheckenbach</b>
               </p>
               <a
                 href="/pdfs/selbstbehauptungskurs.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
+            target="_blank"
+            rel="noopener noreferrer"
                 className="inline-flex items-center text-[#3676BA] hover:text-[#E1B84F] font-semibold transition-colors"
               >
                 PDF herunterladen
@@ -323,12 +323,12 @@ export default function Home() {
                 Bekanntgabe weiterer erfolgreicher Förderprojekte im Landkreis Ansbach
               </h3>
               <p className="text-gray-700 mb-4">
-                [Kurzer Text zu den Förderprojekten - bitte ergänzen]
+              Unser Verein unterstützt finanziell Präventionskurse u.a. in Kindergärten, Schulen, sozialen Einrichtungen
               </p>
               <a
                 href="/pdfs/praeventionskurse.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
+            target="_blank"
+            rel="noopener noreferrer"
                 className="inline-flex items-center text-[#3676BA] hover:text-[#E1B84F] font-semibold transition-colors"
               >
                 PDF herunterladen
@@ -360,6 +360,43 @@ export default function Home() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
             </svg>
           </a>
+        </div>
+      </section>
+
+      {/* Kontakt */}
+      <section id="kontakt" className="py-16 px-4">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#3676BA] mb-8 text-center">
+            Kontakt
+          </h2>
+          <div className="bg-white p-8 rounded-lg shadow-md">
+            <p className="text-lg text-gray-700 mb-8 leading-relaxed">
+              Bei Interesse an unserem Verein, offenen Fragen oder Förderbedarf für gemeinsame Projekte gegen Jugendkriminalität, nehmen Sie gerne Kontakt mit uns auf:
+            </p>
+            
+            <div className="space-y-4 text-gray-700">
+              <div>
+                <h3 className="text-2xl font-bold text-[#3676BA] mb-4">
+                  Wir gegen Jugendkriminalität e.V.
+                </h3>
+              </div>
+              
+              <div className="space-y-2">
+                <p className="text-lg font-semibold text-[#3676BA]">
+                  Thomas Harloff
+                </p>
+                <p className="text-lg">
+                  Dornberg 112E
+                </p>
+                <p className="text-lg">
+                  91522 Ansbach
+                </p>
+                <p className="text-lg">
+                  E-Mail: <a href="mailto:info@jukrim.de" className="text-[#3676BA] hover:text-[#E1B84F] transition-colors">info@jukrim.de</a>
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 

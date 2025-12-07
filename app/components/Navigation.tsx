@@ -60,9 +60,16 @@ export default function Navigation() {
               >
                 Projekte
               </a>
-            <Link href="/kontakt" className="text-black hover:text-[#3676BA] font-medium transition-colors">
+            <a 
+              href="#kontakt" 
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('kontakt')?.scrollIntoView({ behavior: 'smooth' });
+              }}
+              className="text-black hover:text-[#3676BA] font-medium transition-colors cursor-pointer"
+            >
               Kontakt
-            </Link>
+            </a>
               <Link href="/impressum" className="text-black hover:text-[#3676BA] font-medium transition-colors">
                 Impressum
               </Link>
@@ -131,13 +138,19 @@ export default function Navigation() {
                 >
                   Projekte
                 </a>
-              <Link
-                href="/kontakt"
-                onClick={() => setIsMenuOpen(false)}
-                className="text-black hover:text-[#3676BA] font-medium transition-colors py-2 border-b border-gray-100"
+              <a
+                href="#kontakt"
+                onClick={(e) => {
+                  e.preventDefault();
+                  setIsMenuOpen(false);
+                  setTimeout(() => {
+                    document.getElementById('kontakt')?.scrollIntoView({ behavior: 'smooth' });
+                  }, 100);
+                }}
+                className="text-black hover:text-[#3676BA] font-medium transition-colors cursor-pointer py-2 border-b border-gray-100"
               >
                 Kontakt
-              </Link>
+              </a>
                 <Link
                   href="/impressum"
                   onClick={() => setIsMenuOpen(false)}
