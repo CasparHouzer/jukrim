@@ -22,7 +22,7 @@ export default function Kontakt() {
             
             <div className="space-y-2">
               <p className="text-lg font-semibold text-[#3676BA]">
-                Thomas Harloff
+                Thomas Ranki-Harloff
               </p>
               <p className="text-lg">
                 Dornberg 112E

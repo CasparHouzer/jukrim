@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Navigation from "./components/Navigation";
+import ExpandableText from "./components/ExpandableText";
 
 export default function Home() {
   return (
@@ -14,7 +15,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
-                Wir gegen Jugendkriminalität e.V
+                Wir gegen Jugendkriminalität e.V.
               </h1>
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-6 text-[#3676BA]">
                 Gemeinsam für eine sichere Jugend in Mittelfranken
@@ -98,11 +99,11 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Wer sind wir */}
+      {/* Das ist unser Verein */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-[#3676BA] mb-12 text-center">
-            Wer sind wir
+            Das ist unser Verein
           </h2>
           
           {/* Einführungstext */}
@@ -138,46 +139,46 @@ export default function Home() {
             Der Vorstand
           </h3>
           <div className="grid md:grid-cols-3 gap-8">
-            {/* Thomas */}
-            <div className="flex flex-col">
-              <div className="relative w-full aspect-square mb-6 rounded-lg overflow-hidden shadow-md mx-auto" style={{ maxWidth: '300px' }}>
-                <Image
-                  src="/images/team/thomas.jpg"
-                  alt="Thomas Harloff"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <h3 className="text-xl font-bold text-[#3676BA] mb-2 text-center">
-                Thomas Harloff
-              </h3>
-              <p className="text-sm text-gray-600 mb-4 text-center">
-                Geschäftsführender Vorsitzender
-              </p>
-              <p className="text-gray-700 text-base leading-relaxed text-left">
-                Als noch recht neuer Bürger von Ansbach (seit 2020) haben es mir die Stadt und die Region Westmittelfranken sehr leicht gemacht, mich einzuleben und wohlzufühlen. Ich gehöre dem Jahrgang 1982 an und bin Journalist im Bereich Autos und Mobilität. Für unseren Verein engagiere ich mich, weil für den gesellschaftlichen Zusammenhalt ehrenamtliches Engagement unabdingbar ist und dem Thema Jugendkriminalität präventiv begegnet. Der Verein bringt beides zusammen, weshalb ich überzeugt bin, hier viel Gutes bewirken zu können.
-              </p>
-            </div>
-
-            {/* Markus */}
+            {/* Markus - 1. Vorsitzender (an erster Stelle) */}
             <div className="flex flex-col">
               <div className="relative w-full aspect-square mb-6 rounded-lg overflow-hidden shadow-md mx-auto" style={{ maxWidth: '300px' }}>
                 <Image
                   src="/images/team/markus.jpg"
-                  alt="Markus Bucka"
+                  alt="Dr. Markus Bucka"
                   fill
                   className="object-cover"
                 />
               </div>
               <h3 className="text-xl font-bold text-[#3676BA] mb-2 text-center">
-                Markus Bucka
+                Dr. Markus Bucka
               </h3>
               <p className="text-sm text-gray-600 mb-4 text-center">
                 1. Vorsitzender
               </p>
-              <p className="text-gray-700 text-base leading-relaxed text-left">
-                Vereinsmitglied von „Wir gegen Jugendkriminalität e.V." (JuKrim) bin ich seit 2014. Im Jahr 2020 wurde ich erneut in den Stadtrat Ansbach gewählt und dann auch zum 2. Bürgermeister ernannt. Dadurch habe ich satzungsgemäß auch die Mitarbeit im Vorstand von JuKrim e.V. angenommen und wurde dann von der Mitgliederversammlung zum 1. Vorsitzenden des Vereins gewählt. Ein großes Anliegen ist mir dieser Verein, da es äußerst wichtig ist, dass durch vielerlei Maßnahmen die Kriminalität von Jugendlichen möglichst frühzeitig verhindert wird. Dafür engagieren wir uns als Verein gerne finanziell, indem wir Veranstaltungen von Kindergärten, Schulen und freien Trägern unterstützen, die mit dieser Zielsetzung vereinbar sind. Als Verein selbst führen wir aber keine dieser Kurse etc. durch.
+              <ExpandableText 
+                text={'Vereinsmitglied von „Wir gegen Jugendkriminalität e.V." (JuKrim) bin ich seit 2014. Im Jahr 2020 wurde ich erneut in den Stadtrat Ansbach gewählt und dann auch zum 2. Bürgermeister ernannt. Dadurch habe ich satzungsgemäß auch die Mitarbeit im Vorstand von JuKrim e.V. angenommen und wurde dann von der Mitgliederversammlung zum 1. Vorsitzenden des Vereins gewählt. Ein großes Anliegen ist mir dieser Verein, da es äußerst wichtig ist, dass durch vielerlei Maßnahmen die Kriminalität von Jugendlichen möglichst frühzeitig verhindert wird. Dafür engagieren wir uns als Verein gerne finanziell, indem wir Veranstaltungen von Kindergärten, Schulen und freien Trägern unterstützen, die mit dieser Zielsetzung vereinbar sind. Als Verein selbst führen wir aber keine dieser Kurse etc. durch.'}
+              />
+            </div>
+
+            {/* Thomas - Geschäftsführender Vorsitzender */}
+            <div className="flex flex-col">
+              <div className="relative w-full aspect-square mb-6 rounded-lg overflow-hidden shadow-md mx-auto" style={{ maxWidth: '300px' }}>
+                <Image
+                  src="/images/team/thomas.jpg"
+                  alt="Thomas Ranki-Harloff"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <h3 className="text-xl font-bold text-[#3676BA] mb-2 text-center">
+                Thomas Ranki-Harloff
+              </h3>
+              <p className="text-sm text-gray-600 mb-4 text-center">
+                Geschäftsführender Vorsitzender
               </p>
+              <ExpandableText 
+                text="Als noch recht neuer Bürger von Ansbach (seit 2020) haben es mir die Stadt und die Region Westmittelfranken sehr leicht gemacht, mich einzuleben und wohlzufühlen. Ich gehöre dem Jahrgang 1982 an und bin Journalist im Bereich Autos und Mobilität. Für unseren Verein engagiere ich mich, weil für den gesellschaftlichen Zusammenhalt ehrenamtliches Engagement unabdingbar ist und dem Thema Jugendkriminalität präventiv begegnet. Der Verein bringt beides zusammen, weshalb ich überzeugt bin, hier viel Gutes bewirken zu können."
+              />
             </div>
 
             {/* Sandra */}
@@ -196,9 +197,85 @@ export default function Home() {
               <p className="text-sm text-gray-600 mb-4 text-center">
                 Amtsleitung Amt für Familie und Jugend der Stadt Ansbach
               </p>
-              <p className="text-gray-700 text-base leading-relaxed text-left">
-                Ich bin gebürtige Ansbacherin und kenne die Strukturen in und außerhalb der Stadtverwaltung sehr gut. In meiner Funktion als Amtsleiterin bekomme ich die Probleme und Bedarfe der Kinder, Jugendlichen und Familien in Ansbach tagtäglich mit. Als Verfechterin präventiver Maßnahmen finde ich es toll, mich im Verein „Wir-gegen-Jugendkriminalität" engagieren zu können. Prävention von Jugendkriminalität ist ein zentrales Anliegen von Gesellschaft, Politik, Schulen und Sozialen Einrichtungen. Als Jugendamt können wir hierbei präventiv unterstützen, wie z.B, durch den Einsatz unserer Streetworkerin oder unseres Jugendzentrums, das für alle Jugendlichen offen ist und auch für benachteiligte Jugendliche Freizeitangebote bereithält. Ferner haben wir an den Ansbacher Grund- und Mittelschulen Jugendsozialarbeiter im Einsatz, die den Kindern- und Jugendlichen in den unterschiedlichsten Problemlagen zur Seite stehen.
+              <ExpandableText 
+                text={'Ich bin gebürtige Ansbacherin und kenne die Strukturen in und außerhalb der Stadtverwaltung sehr gut. In meiner Funktion als Amtsleiterin bekomme ich die Probleme und Bedarfe der Kinder, Jugendlichen und Familien in Ansbach tagtäglich mit. Als Verfechterin präventiver Maßnahmen finde ich es toll, mich im Verein „Wir-gegen-Jugendkriminalität" engagieren zu können. Prävention von Jugendkriminalität ist ein zentrales Anliegen von Gesellschaft, Politik, Schulen und Sozialen Einrichtungen. Als Jugendamt können wir hierbei präventiv unterstützen, wie z.B, durch den Einsatz unserer Streetworkerin oder unseres Jugendzentrums, das für alle Jugendlichen offen ist und auch für benachteiligte Jugendliche Freizeitangebote bereithält. Ferner haben wir an den Ansbacher Grund- und Mittelschulen Jugendsozialarbeiter im Einsatz, die den Kindern- und Jugendlichen in den unterschiedlichsten Problemlagen zur Seite stehen.'}
+              />
+            </div>
+          </div>
+
+          {/* Weitere Vorstandsmitglieder */}
+          <div className="grid md:grid-cols-3 gap-8 mt-8">
+            {/* Landrat 1 - Platzhalter */}
+            <div className="flex flex-col">
+            <div className="relative w-full aspect-square mb-6 rounded-lg overflow-hidden shadow-md mx-auto" style={{ maxWidth: '300px' }}>
+                <Image
+                  src="/images/team/juergen.jpg"
+                  alt="Dr. Jürgen Ludwig"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <h3 className="text-xl font-bold text-[#3676BA] mb-2 text-center">
+              Dr. Jürgen Ludwig
+              </h3>
+              <p className="text-sm text-gray-600 mb-4 text-center">
+              Landrat des Landkreises Ansbach
               </p>
+              <ExpandableText 
+                text="Konflikte und Gewalt sind aktuell so präsent wie nie. Ich engagiere mich gegen
+Jugendkriminalität, weil ich daran glaube, dass es immer eine Alternative gibt.
+Jungen Menschen in schwierigen Situationen beizustehen, dorthin zu gehen, wo
+Hilfe gebraucht wird und für ein friedliches Miteinander einzustehen: Das sind Ziele,
+die jeden Aufwand Wert sind – für den Verein und für die gesamte Gesellschaft."
+              />
+            </div>
+
+            {/* Landrat 2 - Platzhalter */}
+            <div className="flex flex-col">
+              <div className="relative w-full aspect-square mb-6 rounded-lg overflow-hidden shadow-md mx-auto" style={{ maxWidth: '300px' }}>
+                  <Image
+                    src="/images/team/dobschütz.jpg"
+                    alt="Dr. Christian von Dobschütz"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+              <h3 className="text-xl font-bold text-[#3676BA] mb-2 text-center">
+              Dr. Christian von Dobschütz
+              </h3>
+              <p className="text-sm text-gray-600 mb-4 text-center">
+              Landrat des Landkreises Neustadt-Aisch/Bad Windsheim
+              </p>
+              <ExpandableText 
+                text="Als Landrat des Landkreises Neustadt a.d.Aisch-Bad Windsheim liegen mir
+insbesondere unsere jungen Menschen sehr am Herzen. Durch mein Amt habe ich
+die Möglichkeit, positive Impulse für ihre Zukunft zu setzen. Deshalb sehe ich den
+Verein „Wir gegen Jugendkriminalität e.V.“ dabei als einen wichtigen und sinnvollen
+Akteur."
+              />
+            </div>
+
+            {/* Stadtvertreter - Platzhalter */}
+            <div className="flex flex-col">
+              <div className="relative w-full aspect-square mb-6 rounded-lg overflow-hidden shadow-md mx-auto" style={{ maxWidth: '300px' }}>
+                  <Image
+                    src="/images/team/holger.jpg"
+                    alt="Holger Nießlein"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+              <h3 className="text-xl font-bold text-[#3676BA] mb-2 text-center">
+              Holger Nießlein
+              </h3>
+              <p className="text-sm text-gray-600 mb-4 text-center">
+              Sozialreferent der Stadt Ansbach
+              </p>
+              <ExpandableText 
+                text="Ich bin gebürtiger Ansbacher und seit 1993 bei der Stadt Ansbach tätig. Im Rahmen meiner Berufsausübung als Sozialreferent und Jurist bei der Stadt Ansbach bin ich zu der Überzeugung gelangt, dass Prävention in ihren verschiedensten
+Ausgestaltungen zur Verhütung von Kriminalität unerlässlich ist. Hierfür trägt der
+Verein im Jugendbereich das ihm Mögliche bei."
+              />
             </div>
           </div>
         </div>
@@ -383,7 +460,7 @@ export default function Home() {
               
               <div className="space-y-2">
                 <p className="text-lg font-semibold text-[#3676BA]">
-                  Thomas Harloff
+                  Thomas Ranki-Harloff
                 </p>
                 <p className="text-lg">
                   Dornberg 112E
